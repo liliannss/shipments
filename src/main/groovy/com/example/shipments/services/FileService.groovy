@@ -48,7 +48,7 @@ class FileService {
                 }
                 fileConfig.flush()
             }
-        } catch (IOException ex) {
+        } finally {
             fileConfig.close()
         }
     }
